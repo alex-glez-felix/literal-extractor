@@ -77,7 +77,7 @@ func init() {
 		fmt.Println(err)
 	}
 
-	rootCmd.Flags().StringVarP(&outputFile, "output", "o", "generated_literals.sql", "Nombre del archivo de salida para el script SQL")
+	rootCmd.Flags().StringVarP(&outputFile, "output", "o", "populate_db_literals_XX.sql", "Nombre del archivo de salida para el script SQL")
 
 	rootCmd.Flags().BoolVarP(&isInteractive, "interactive", "i", false, "Activa el modo interactivo para definir valores por defecto")
 }
